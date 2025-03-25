@@ -1,0 +1,223 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(93, 82, 68, 1);
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(198, 192, 186, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+}
+
+.navbar .logo {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: absolute;
+    left: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(54, 43, 29, 1);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.navbar a:hover {
+    color: rgba(136, 128, 118, 1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(198, 192, 186, 1);
+    text-align: center;
+    padding-top: 8rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: rgba(54, 43, 29, 1);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgba(54, 43, 29, 1);
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    margin-top: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.features, .about {
+    background-color: rgba(198, 192, 186, 1);
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    color: rgba(54, 43, 29, 1);
+}
+
+.features:hover, .about:hover {
+    transform: translateY(-10px);
+}
+
+/* Feature Items */
+.feature-item {
+    margin-bottom: 2rem;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+.cta {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(93, 82, 68, 1);
+    border: none;
+    color: rgba(198, 192, 186, 1);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cta:hover {
+    background-color: rgba(136, 128, 118, 1);
+    transform: scale(1.1);
+    color: rgba(54, 43, 29, 1);;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(198, 192, 186, 1);
+    color: rgba(54, 43, 29, 1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+#features p {
+    margin-bottom: 4rem;
+}
+
+#about ul {
+    list-style:none
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links li a {
+    color: rgba(54, 43, 29, 1);
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: rgba(136, 128, 118, 1);
+    transform: scale(1.2);
+}
