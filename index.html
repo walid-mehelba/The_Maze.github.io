@@ -32,12 +32,7 @@
         alt="The Maze Cover"
         class="cover-image"
       />
-      <button
-        class="cta"
-        onclick="window.location.href='https://deployedproject.com'"
-      >
-        Watch Demo
-      </button>
+      <button class="cta" onclick="openTab()">Watch Demo</button>
     </header>
 
     <section id="features" class="features">
@@ -70,18 +65,6 @@
       <p><strong>Timeline</strong></p>
       <p>5 weeks of intense development, collaboration, and iteration.</p>
       <p><strong>Team Members</strong></p>
-      <!-- <ul>
-        <li>
-          <a href="https://linkedin.com/in/walidmehelba">Walid Mehelba</a>
-          (LinkedIn) | <a href="https://github.com/walidmehelba">GitHub</a> |
-          <a href="https://twitter.com/walidmehelba">Twitter</a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/lailamohamed">Laila Mohamed</a>
-          (LinkedIn) | <a href="https://github.com/lailamohamed">GitHub</a> |
-          <a href="https://twitter.com/lailamohamed">Twitter</a>
-        </li>
-      </ul> -->
       <ul class="social-links">
         <li>
           <p>Walid Mehelba</p>
@@ -113,10 +96,14 @@
     <footer>
       <p>&copy; 2025 The Maze. All rights reserved.</p>
     </footer>
+
     <script>
       document.getElementById("logo").addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
+      function openTab() {
+        window.open("https://youtu.be/tJU38sGLad0?feature=shared", "_blank");
+      }
     </script>
   </body>
 </html>
