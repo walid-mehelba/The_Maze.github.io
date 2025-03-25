@@ -69,7 +69,7 @@ body {
     align-items: center;
     background-color: rgba(198, 192, 186, 1);
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 2rem;
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-in;
 }
